@@ -1,0 +1,28 @@
+{
+  "name": "forecast",
+  "version": "1.0.0",
+  "description": "angularjs single page aplication",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/merciof/forecast.git"
+  },
+  "keywords": [
+    "javascript",
+    "angularjs",
+    "bootstrap"
+  ],
+  "author": "merciof",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/merciof/forecast/issues"
+  },
+  "homepage": "https://github.com/merciof/forecast#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  }
+}
