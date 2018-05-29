@@ -14,11 +14,20 @@ forecastApp.config(function($routeProvider){
     })
 })
 
-//Controllers
-forecastApp.controller('homeController',['$scope', function($scope){
+//Services
+forecastApp.service('cityService', function(){
+    this.city = 'Recife, Pernambuco';
+})
 
+//Controllers
+forecastApp.controller('homeController',['$scope','cityService', function($scope, cityService){
+    $scope.city = cityService.city;
+    
+    $scope.$watch('city', function(){
+        cityService.city = $scope.city;
+    })
 }]);
 
-forecastApp.controller('forecastController', ['$scope', function($scope){
-
+forecastApp.controller('forecastController', ['$scope','cityService', function($scope, cityService){
+    $scope.city = cityService.city;
 }]);
