@@ -1,5 +1,5 @@
 // Module
-var forecastApp = angular.module('forecastApp',['ngRoute']);
+var forecastApp = angular.module('forecastApp',['ngRoute','ngResource']);
 
 //Rotas
 forecastApp.config(function($routeProvider){
